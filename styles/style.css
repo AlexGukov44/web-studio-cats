@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: gold;
+}
 .wrapper {
     width: 600px;
     border: 1px solid black;
@@ -57,4 +60,15 @@ footer {
 .social img {
     width: 25px;
     margin-left: 10px;
+}
+
+
+@media (max-width: 500px) {
+    .wrapper {
+        width: 100%;
+    }
+    section {
+        display: block;
+        text-align: center;
+    }
 }
