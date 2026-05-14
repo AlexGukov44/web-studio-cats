@@ -7,7 +7,6 @@ body {
 }
 .wrapper {
     width: 600px;
-    border: 1px solid black;
     margin: 0 auto;
     background-color: #FF8C00;
 }
@@ -66,6 +65,13 @@ footer {
 @media (max-width: 500px) {
     .wrapper {
         width: 100%;
+    }
+    header {
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto;
     }
     section {
         display: block;
