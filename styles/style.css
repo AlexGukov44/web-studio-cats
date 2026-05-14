@@ -19,6 +19,7 @@ header {
     height: 100px;
     margin-top: 0;
     box-shadow: 0 5px 8px;
+    gap: 20px;
 }
 
 section {
