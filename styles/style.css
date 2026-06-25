@@ -5,6 +5,16 @@
 body {
     background-color: gold;
 }
+.body-game {
+    background-color: bisque;
+    height: 100%;
+    display: flex;
+}
+
+input {
+    transform: rotate(-90deg);
+}
+
 .wrapper {
     width: 600px;
     margin: 0 auto;
@@ -45,6 +55,114 @@ section p {
     text-align: justify;
     font-size: 20px;
 }
+
+.field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.user {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: chocolate;
+    position: absolute;
+    left: 30%;
+    z-index: 10;
+    top: 0; 
+}
+
+@keyframes move {
+    from {
+    transform: translateX(100%); 
+    }
+    to {
+        transform: translateX(-100%);  
+    }
+}
+@keyframes move2 {
+    from {
+    transform: rotate(180deg) translateX(-100%);
+    }
+    to {
+        transform: rotate(180deg) translateX(100%);
+    }
+}
+
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;       /* Обязательно: чтобы элементы не переносились */
+    gap: 290px;
+    animation: move 5s linear infinite;
+}
+
+.upper-item1 {
+    width: 5px;
+    height: 30px;
+    border: 2px solid black;
+}
+.upper-item2 {
+    width: 5px;
+    height: 130px;
+    border: 2px solid black;
+}
+.upper-item3 {
+    width: 5px;
+    height: 120px;
+    border: 2px solid black;
+}
+.upper-item4 {
+    width: 5px;
+    height: 140px;
+    border: 2px solid black;
+}
+.upper-item5 {
+    width: 5px;
+    height: 180px;
+    border: 2px solid black;
+}
+.upper-item6 {
+    width: 5px;
+    height: 100px;
+    border: 2px solid black;
+}
+.bottom-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;       /* Обязательно: чтобы элементы не переносились */
+    justify-content: flex-end;
+    gap: 300px;
+    transform: rotate(180deg);
+    animation: move2 5s linear 0.25s infinite;
+}
+
+
+.button {
+    width: 80px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px, inset 0 0 8px white;
+}
+
+
 footer {
     background-color: #FF9600;
     border: 1px solid black;
